@@ -13,6 +13,9 @@ class Index
     public function addajax(){
          $this->ajaxReturn("-99","添加活动",1) ;
     }
+    /**
+     * php 后台为伪代码
+     */
     //创建活动
     public function add()
     {
