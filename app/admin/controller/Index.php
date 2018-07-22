@@ -81,7 +81,6 @@ class Index extends  Controller
 
     /***
      * 保存活动信息
-     * @param $data
      * @return int
      */
     function  saveActivity(Request $request){
@@ -100,7 +99,7 @@ class Index extends  Controller
     function  updateActiveCode(Request $request){
         //获取验证码
         $activtyCode = $request -> post("activtyCode");
-        //活动券码表查询记录
+        //变更验证码使用状态为已用
         $res = ActivityCode::update([
             "status"=>1
         ],[
